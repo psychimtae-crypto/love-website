@@ -1,0 +1,34 @@
+<body style="background-image:url('yay.jpg'); background-size:cover; background-position:center; text-align:center;">
+
+<h1 style="font-family:cursive; font-size:40px; margin-bottom:40px;"> DO YOU LOVE ME YASSIN ?
+</h1>
+
+<button id="yesButton"
+style="background-color:green; color:white; font-size:24px; padding:15px 30px;"
+onclick="alert('I knew it! ❤️')">
+YES
+</button>
+
+<button id="noButton"
+style="position:absolute; background-color:red; color:white; font-size:24px; padding:15px 30px;">
+NO
+</button>
+
+<script>
+const noButton = document.getElementById("noButton");
+
+
+function moveButton() {
+    noButton.style.left =
+    Math.random() * (window.innerWidth - 150) + "px";
+
+    noButton.style.top =
+    Math.random() * (window.innerHeight - 100) + "px";
+}
+
+noButton.addEventListener("mouseover", moveButton);
+noButton.addEventListener("touchstart", moveButton);
+</script>
+
+</body>
+</html>
